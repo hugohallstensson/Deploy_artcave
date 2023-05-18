@@ -1,0 +1,187 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+#top{
+  margin-top: 20px;
+}
+  
+
+
+  #success{
+    text-align: center;
+    color: rgba(143,104,241,255);
+    margin-top: 30px;
+  }
+
+  #logosuc{
+    margin-top: 30px;
+  }
+
+
+  #kollum{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#kollum2{
+
+
+
+
+}
+
+#textt{
+  
+}
+
+#testtt{
+  
+  position: relative;
+  margin-left: 10%;
+  
+}
+
+#testt{
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+#kolol{
+
+  
+}
+
+
+  .image2 {
+
+   position: absolute;
+   left: 215px;
+   top: 200px;
+   transform: translate(-50%, -50%);
+  }
+
+  .image1 {
+    position: absolute;
+    left: 215px;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.733), 0 12px 40px 0 rgba(0, 0, 0, 0.562);
+
+  }
+
+  .image3 {
+    
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.733), 0 12px 40px 0 rgba(0, 0, 0, 0.562);
+    
+
+  }
+
+#top2{
+
+  width: 50%;
+  
+
+}
+
+  .kolumn{
+    width: 50%
+  }
+
+  #imagemain {
+    position: relative;
+    
+
+   
+ 
+    
+    
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.733), 0 12px 40px 0 rgba(0, 0, 0, 0.562);
+   
+  }
+
+
+
+  .textrubrik1{
+    margin-left: 100px;
+    background-color: blueviolet;
+  }
+
+
+  .parent{
+    position: relative;
+  }
+
+  .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    height: 650px;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+
+#color{
+  margin-top: 30px;
+  width: 200px;
+}
+
+#size{
+  margin-top: 20px;
+  width: 200px;
+}
+.quant{
+  margin-top: 20px;
+}
+
+.price{
+  margin-top: 20px;
+}
+
+#chbutton{
+  margin-top: 20px;
+  background-color: rgba(143,104,241,255) !important;
+  border-color: rgba(143,104,241,255);
+}
+
+#button1{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  background-color: rgba(143,104,241,255) !important;
+  border-color: rgba(143,104,241,255);
+
+}
+
+.liltitel{
+  margin-top: 40px;
+}
+
+#button2{
+  width: 200px;
+  background-color: rgb(180, 180, 180) !important;
+  border-color: rgb(180, 180, 180);
+}
+
+#button10{
+  width: 140px;
+  margin-left: 20px;
+  background-color: rgb(180, 180, 180) !important;
+  border-color: rgb(180, 180, 180);
+}
+
+#button20{
+  width: 140px;
+
+  background-color: rgba(143,104,241,255) !important;
+  border-color: rgba(143,104,241,255);
+}

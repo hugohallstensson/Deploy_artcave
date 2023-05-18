@@ -1,0 +1,21 @@
+#info{
+    margin-top: 4%;
+    text-align: left;
+
+}
+
+#delbtn{
+margin-top: 20px;
+width: 100px;
+
+}
+
+#prissam{
+    text-align: center;
+}
+
+#chckbtn{
+    background-color: rgba(143,104,241,255) !important;
+    border-color: rgba(143,104,241,255);
+
+}

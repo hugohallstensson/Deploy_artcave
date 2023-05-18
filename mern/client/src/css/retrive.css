@@ -1,0 +1,28 @@
+#card{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+}
+
+#cardbutton{
+    margin-right: 10px;
+}
+
+
+#message{
+
+
+color: rgba(143,104,241,255);
+    margin-top: 20px;
+    text-align: center;
+}
+
+#text{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(143,104,241,255);
+
+}

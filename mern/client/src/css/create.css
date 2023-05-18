@@ -1,0 +1,83 @@
+.titel {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.smallTitel {
+    text-align: center;
+}
+
+.test {
+    width: 55%;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form-group{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.form-group2{
+    width: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+.yesimage{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+
+
+}
+
+.buttons{
+    position: relative;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+#button10{
+    width: 140px;
+    margin-left: 20px;
+    background-color: rgb(180, 180, 180) !important;
+    border-color: rgb(180, 180, 180);
+}
+
+#button20{
+    width: 140px;
+
+    background-color: rgba(143,104,241,255) !important;
+    border-color: rgba(143,104,241,255);
+}
+
+
+
+
+#loader{
+    margin-left: 48.8%;
+   
+
+}
+
+#btn{
+    background-color: rgba(143,104,241,255) !important;
+    border-color: rgba(143,104,241,255);
+    width: 200px;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    background-color: aqua;
+
+}

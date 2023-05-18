@@ -1,0 +1,52 @@
+.mainBild{
+    width: 80%;
+
+    margin-left: 10%;
+}
+
+.center {
+    text-align: center;
+  }
+
+  .title{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+#mainbig{
+  margin-bottom: 20px;
+}
+
+  .breading{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: rgb(136, 136, 136);
+    
+  }
+
+  #btn{
+    margin-bottom: 50px;
+  }
+
+.testmain{
+    width: 50%;
+}
+
+.test1{
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+}
+.test2{
+    width: 50%;
+    float: right;
+    margin-top: 10px;
+}
+
+#btn24{
+    background-color: rgba(143,104,241,255) !important;
+    border-color: rgba(143,104,241,255);
+
+}

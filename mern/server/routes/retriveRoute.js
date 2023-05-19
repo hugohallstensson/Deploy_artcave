@@ -8,7 +8,7 @@ const express = require("express");
 const retriveRoutes = express.Router();
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);

@@ -5,9 +5,9 @@ import Parse from 'parse/dist/parse.min.js';
 
 
 // We import NavLink to utilize the react router.
-import { NavLink } from "react-router-dom";
+
 import Userfront from "@userfront/react";
-import {Button, Container, Modal} from 'react-bootstrap';
+
 import { useState, useContext } from 'react';
 /* Option 2: Import via CSS */
 import "bootstrap-icons/font/bootstrap-icons.css";

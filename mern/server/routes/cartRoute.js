@@ -65,6 +65,20 @@ cartRoutes.route("/shoppingcart").get(function (req, res) {
       });
   });
 
+  // This section will help you get a list of all the records.
+cartRoutes.route("/endpoint").get(function (req, res) {
+
+
+
+    let db_connect = dbo.getDb("employees");
+    db_connect
+      .collection("shoppingcart")
+      .toArray(function (err, result) {
+        if (err) throw err;
+        res.json(result);
+      });
+  });
+
     
 // This section will help you create a new record.
 cartRoutes.route("/shoppingcart/save").post(function (req, response) {

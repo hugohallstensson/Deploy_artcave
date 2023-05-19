@@ -1,7 +1,14 @@
 const { Configuration, OpenAIApi } = require('openai');
 const fs = require("fs");
 const express = require("express");
+const cloudinary = require('cloudinary').v2;
 
+// Configuration 
+cloudinary.config({
+  cloud_name: "dsser57e8",
+  api_key: "985438846289424",
+  api_secret: process.env.CLOUD,
+});
 
 // recordRoutes is an instance of the express router.
 // We use it to define our routes.
@@ -63,11 +70,30 @@ imageRoutes.route("/image/create").post(async function (req, response) {
       const buffer = Buffer.from( await blob.arrayBuffer())
       tempFileUrl = Date.now()
       fileUrl = `./${tempFileUrl}.png`
+      fileUrl2 = `../client/public/${tempFileUrl}.png`
+
+
       fs.writeFileSync(`../client/public/${tempFileUrl}.png`, buffer);
-  
+      
+      const res = cloudinary.uploader.upload(fileUrl2, {public_id: "olympic_flag"})
+
+      res.then((data) => {
+        console.log(data);
+        console.log(data.secure_url);
+      }).catch((err) => {
+        console.log(err);
+      });
+
+      const url2 = cloudinary.url("olympic_flag", {
+      });
+
+      console.log(url2)
+
+      
+
       response.status(200).json({
         success: true,
-        data: fileUrl,
+        data: url2,
       });
     } catch (error) {
       if (error.response) {

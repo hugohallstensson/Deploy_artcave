@@ -70,13 +70,14 @@ cartRoutes.route("/endpoint").get(function (req, res) {
 
 
 
-    let db_connect = dbo.getDb("employees");
-    db_connect
-      .collection("shoppingcart")
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
+  let db_connect = dbo.getDb("employees");
+  db_connect
+    .collection("images")
+    .find({})
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
   });
 
     

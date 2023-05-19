@@ -65,7 +65,7 @@ export default function Image() {
 
 
 
-    const response = await fetch("http://localhost:5000/image/create", {
+    const response = await fetch("https://artcave-react.onrender.com/image/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -108,7 +108,7 @@ export default function Image() {
 
     const imageUrlSave = { imageUrl: imageNewUrl.url, prompt: imageNewUrl.prompt };
 
-    await fetch("http://localhost:5000/image/save", {
+    await fetch("https://artcave-react.onrender.com/image/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

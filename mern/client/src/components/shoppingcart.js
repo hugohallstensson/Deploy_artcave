@@ -37,7 +37,7 @@ export default function Shoopingcart() {
 
     const imageUrlSave = { imageUrl: e.currentTarget.getAttribute("data-value") };
 
-    await fetch("http://localhost:5000/shoppingcart/delete", {
+    await fetch("https://artcave-react.onrender.com/shoppingcart/delete", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -89,7 +89,7 @@ export default function Shoopingcart() {
 
 
     async function getImages() {
-      const response = await fetch(`http://localhost:5000/shoppingcart/`, {
+      const response = await fetch(`https://artcave-react.onrender.com/shoppingcart/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -151,7 +151,7 @@ export default function Shoopingcart() {
 
     // When a post request is sent to the create url, we'll add a new record to the database.
 
-    const res = await fetch("http://localhost:5000/checkout", {
+    const res = await fetch("https://artcave-react.onrender.com/checkout", {
       method: 'POST',
       headers: {
         "Content-Type": 'application/json'

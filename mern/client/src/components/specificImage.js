@@ -76,7 +76,7 @@ export default function Image() {
 
 
 
-    await fetch("http://localhost:5000/shoppingcart/save", {
+    await fetch("https://artcave-react.onrender.com/shoppingcart/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -236,7 +236,7 @@ export default function Image() {
 
     const imageUrlSave = { imageUrl: location.state.url };
 
-    await fetch("http://localhost:5000/image/save", {
+    await fetch("https://artcave-react.onrender.com/image/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

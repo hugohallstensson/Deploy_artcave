@@ -34,7 +34,7 @@ useEffect(async () => {
 
         
   
-    const response = await fetch(`http://localhost:5000/shoppingcart/`,{
+    const response = await fetch(`https://artcave-react.onrender.com/shoppingcart/`,{
       method: "GET",
       headers: {
         "Content-Type": "application/json",

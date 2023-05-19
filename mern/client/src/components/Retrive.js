@@ -60,7 +60,7 @@ const Image = (props) => (
         
         const imageUrlSave = {imageUrl: e.currentTarget.getAttribute("data-value")};
         
-      await fetch("http://localhost:5000/retrive/delete", {
+      await fetch("https://artcave-react.onrender.com/retrive/delete", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const Image = (props) => (
       // This function will handle the submission.
       useEffect(() => {
       async function getImages() {
-        const response = await fetch(`http://localhost:5000/retrive/`,{
+        const response = await fetch(`https://artcave-react.onrender.com/retrive/`,{
           method: "GET",
           headers: {
             "Content-Type": "application/json",

@@ -14,7 +14,7 @@ export default function Image() {
 
   async function regPurchase() {
 
-    const response = await fetch(`http://localhost:5000/shoppingcart/`,{
+    const response = await fetch(`https://artcave-react.onrender.com/shoppingcart/`,{
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export default function Image() {
     console.log("längd: " + tmpImages.length)
     
     if(!(tmpImages.length===0)){
-      await fetch("http://localhost:5000/purchase/save", {
+      await fetch("https://artcave-react.onrender.com/purchase/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export default function Image() {
   async function emptySc() {
 
 
-  await fetch("http://localhost:5000/shoppingcart/empty", {
+  await fetch("https://artcave-react.onrender.com/shoppingcart/empty", {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",

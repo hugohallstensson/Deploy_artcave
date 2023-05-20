@@ -73,7 +73,7 @@ imageRoutes.route("/image/create").post(async function (req, response) {
       fileUrl2 = `../client/public/${tempFileUrl}.png`
 
 
-      fs.writeFileSync(`../client/public/${tempFileUrl}.png`, buffer);
+      //fs.writeFileSync(`../client/public/${tempFileUrl}.png`, buffer);
       
       const res = cloudinary.uploader.upload(fileUrl2, {public_id: "olympic_flag"})
 

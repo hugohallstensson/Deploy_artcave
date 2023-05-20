@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-require('dotenv').config({path:/etc/secrets/.env})
+require('dotenv').config({path:../.env})
 const port = process.env.PORT || 5000;
 
 

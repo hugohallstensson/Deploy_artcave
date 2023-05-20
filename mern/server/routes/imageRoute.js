@@ -50,6 +50,7 @@ imageRoutes.route("/image/create").post(async function (req, response) {
 
     const prompt =  req.body.prompt;
     console.log("test1")
+  console.log(process.env.OPENAI_API_KEY)
 
     // const result = await openai.createImage({
     //     prompt,

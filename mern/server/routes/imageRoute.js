@@ -49,7 +49,7 @@ cqcVVSE551iRlm7Jin+HAwECAwEAAQ==
 imageRoutes.route("/image/create").post(async function (req, response) {
 
     const prompt =  req.body.prompt;
-    console.log("test")
+    console.log("test1")
 
     // const result = await openai.createImage({
     //     prompt,
@@ -63,38 +63,55 @@ imageRoutes.route("/image/create").post(async function (req, response) {
         n: 1,
         size: "1024x1024",
       });
+
+      console.log("test2")
   
       const url = result.data.data[0].url
+
+      console.log("test3")
       // const imgResult = await fetch(url);
       // const blob = await imgResult.blob();
       // const buffer = Buffer.from( await blob.arrayBuffer())
       tempFileUrl = Date.now()
+
+      console.log("test4")
       fileUrl = `./${tempFileUrl}.png`
+
+      console.log("test5")
       fileUrl2 = url
 
-
+      console.log("test7")
       //fs.writeFileSync(`../client/public/${tempFileUrl}.png`, buffer);
       
       const res = cloudinary.uploader.upload(fileUrl2, {public_id: tempFileUrl})
 
+      console.log("test8")
       res.then((data) => {
         console.log(data);
         console.log(data.secure_url);
+        url3 = data.secure_url
+        console.log(url3)
+        response.status(200).json({
+          success: true,
+          data: url3,
+        });
       }).catch((err) => {
         console.log(err);
       });
 
-      const url2 = cloudinary.url("olympic_flag", {
+      console.log("test9")
+
+      const url2 = cloudinary.url(tempFileUrl, {
       });
 
-      console.log(url2)
+      console.log("test10")
 
       
 
-      response.status(200).json({
-        success: true,
-        data: fileUrl2,
-      });
+      
+      
+
+
     } catch (error) {
       if (error.response) {
         console.log(error.response.status);

@@ -65,17 +65,17 @@ imageRoutes.route("/image/create").post(async function (req, response) {
       });
   
       const url = result.data.data[0].url
-      const imgResult = await fetch(url);
-      const blob = await imgResult.blob();
-      const buffer = Buffer.from( await blob.arrayBuffer())
+      // const imgResult = await fetch(url);
+      // const blob = await imgResult.blob();
+      // const buffer = Buffer.from( await blob.arrayBuffer())
       tempFileUrl = Date.now()
       fileUrl = `./${tempFileUrl}.png`
-      fileUrl2 = `../client/public/${tempFileUrl}.png`
+      fileUrl2 = url
 
 
       //fs.writeFileSync(`../client/public/${tempFileUrl}.png`, buffer);
       
-      const res = cloudinary.uploader.upload(fileUrl2, {public_id: "olympic_flag"})
+      const res = cloudinary.uploader.upload(fileUrl2, {public_id: tempFileUrl})
 
       res.then((data) => {
         console.log(data);
@@ -93,7 +93,7 @@ imageRoutes.route("/image/create").post(async function (req, response) {
 
       response.status(200).json({
         success: true,
-        data: url2,
+        data: fileUrl2,
       });
     } catch (error) {
       if (error.response) {

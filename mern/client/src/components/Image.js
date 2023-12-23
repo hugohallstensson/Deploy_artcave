@@ -158,7 +158,7 @@ export default function Image() {
 
 
       return <div className="buttons">
-        <button id="button20" type="button" class="btn btn-primary" onClick={handleSubmit(onOpenSubmit)}>Open</button>
+        <button id="button20" type="button" class="btn btn-primary" onClick={handleSubmit(onOpenSubmit)}>Buy</button>
         <button id="button10" type="button" class="btn btn-primary" onClick={handleSubmit(onSaveSubmit)} >Save</button>
 
       </div>;

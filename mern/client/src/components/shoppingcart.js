@@ -130,9 +130,7 @@ export default function Shoopingcart() {
         <div>
           <Image
             url={image.url}
-
           />
-
           Color: {image.col.value}
           <br />
           Size: {image.size}
@@ -230,19 +228,19 @@ export default function Shoopingcart() {
 
     checkoutCall();
 
-    // setLoading(true);
-    // console.log("redirectToCheckout");
+    setLoading(true);
+    console.log("redirectToCheckout");
 
-    // const stripe = await getStripe();
+    const stripe = await getStripe();
     
   
 
 
-    // const { error } = await stripe.redirectToCheckout(checkoutOptions);
-    // console.log("Stripe checkout error", error);
+    const { error } = await stripe.redirectToCheckout(checkoutOptions);
+    console.log("Stripe checkout error", error);
 
-    // if (error) setStripeError(error.message);
-    // setLoading(false);
+    if (error) setStripeError(error.message);
+    setLoading(false);
 
 
 
@@ -268,7 +266,7 @@ export default function Shoopingcart() {
 
   function Listitem(image) {
 
-
+    var tmpUrl= image.col + ".png"
 
     return (
       <li class="list-group-item">
@@ -277,8 +275,9 @@ export default function Shoopingcart() {
 
           <div class="row">
             <div id="biild" class="col-auto" >
-
-              <img src={image.url} width={250}></img>
+            <img id="img2" src={tmpUrl}  width={250}></img>
+              <img id="img1" src={image.url} width={200}></img>
+            
             </div>
 
             <div id="info" class="col-sm">

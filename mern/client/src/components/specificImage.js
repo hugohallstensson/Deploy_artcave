@@ -254,7 +254,7 @@ export default function Image() {
   // This following section will display the form that takes the input from the user.
   return (
     <div>
-      <div class="container">
+      {/* <div class="container">
         <div id="top" class="row">
           <div id="top2" class="col-auto">
             <img id="imagemain" src={location.state.url} class="img-fluid" alt="Responsive image" />
@@ -275,7 +275,7 @@ export default function Image() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div>
         <div class="container" id="kollum" >

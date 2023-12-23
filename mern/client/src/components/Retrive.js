@@ -29,7 +29,7 @@ const Image = (props) => (
     <tr>
       <td>
         <img src={props.url} width="200"></img>
-        <button data-value={props.url} onClick={test}>Open</button>
+        <button data-value={props.url} onClick={test}>Buy</button>
         <button data-value={props.url} onClick={remove} >Delete</button>
         </td>
         
@@ -157,7 +157,7 @@ const Image = (props) => (
         <div class="card-body">
           <h5 class="card-title">{image.date}</h5>
           <p class="card-text">Prompt: {image.prompt}</p>
-          <a id="cardbutton" class="btn btn-primary" data-value={image.url} onClick={test}>Open</a>
+          <a id="cardbutton" class="btn btn-primary" data-value={image.url} onClick={test}>Buy</a>
           <a  class="btn btn-danger" data-value={image.url} onClick={remove}>Delete</a>
 
           </div>
@@ -195,18 +195,8 @@ const Image = (props) => (
 <h1>
             Saved images
           </h1>
-          <h5>
-            Open images to inspect and buy them
-          </h5>
+
 </div>
-
-
-
-
-
-
-
-
 
       <RequireAuth>
       <div class="container">

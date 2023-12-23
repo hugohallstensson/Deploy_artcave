@@ -19,3 +19,17 @@ width: 100px;
     border-color: rgba(143,104,241,255);
 
 }
+
+
+#img2 {
+
+    position: relative;
+
+   }
+ 
+#img1 {
+
+    position: relative;
+    margin-left: -225px;
+    margin-right: 50px;;
+   }

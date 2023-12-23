@@ -120,8 +120,8 @@ console.log(Userfront.user)
 
         <div class="navbar-collapse collapse" id="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="/Login" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="/Register" class="nav-link">Register</a></li>
+            <li id="hehe2" class="nav-item"><a href="/Login" class="nav-link">Login</a></li>
+            <li id="hehe2" class="nav-item"><a href="/Register" class="nav-link">Register</a></li>
         </ul>
     </div>
         

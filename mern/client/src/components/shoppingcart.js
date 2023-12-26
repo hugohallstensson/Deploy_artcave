@@ -135,9 +135,9 @@ export default function Shoopingcart() {
           <br />
           Size: {image.size}
           <br />
-          quantity: {image.quantity}
+          Quantity: {image.quantity}
           <br />
-          price: {image.price}
+          Price: {image.price}
         </div>
       );
     });
@@ -342,7 +342,7 @@ export default function Shoopingcart() {
 
       
       <h3>
-        total price:
+        Total price:
       </h3>
       <h1>
         {totPrice} Sek
